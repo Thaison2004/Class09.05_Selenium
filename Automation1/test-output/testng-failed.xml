@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Automation.testsuite.Day8_Locator">
+      <class name="Automation.testsuite.Day_8_BTVN">
         <methods>
-          <include name="getElementByLinkText"/>
+          <include name="getElementByName"/>
+          <include name="getElementByAddress"/>
         </methods>
-      </class> <!-- Automation.testsuite.Day8_Locator -->
+      </class> <!-- Automation.testsuite.Day_8_BTVN -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
