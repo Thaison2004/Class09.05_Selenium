@@ -1,29 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-03T18:02:18 ICT" name="Default suite" finished-at="2025-11-03T18:02:34 ICT" duration-ms="16557">
+  <suite started-at="2025-11-23T17:11:39 ICT" name="Default suite" finished-at="2025-11-23T17:11:44 ICT" duration-ms="4807">
     <groups>
     </groups>
-    <test started-at="2025-11-03T18:02:18 ICT" name="Default test" finished-at="2025-11-03T18:02:34 ICT" duration-ms="16557">
-      <class name="Automation.testsuite.Day_8_BTVN">
-        <test-method signature="getElementByAddress()[pri:0, instance:Automation.testsuite.Day_8_BTVN@55141def]" started-at="2025-11-03T18:02:18 ICT" name="getElementByAddress" finished-at="2025-11-03T18:02:23 ICT" duration-ms="5072" status="PASS">
+    <test started-at="2025-11-23T17:11:39 ICT" name="Default test" finished-at="2025-11-23T17:11:44 ICT" duration-ms="4807">
+      <class name="Automation.testsuite.LoginTest">
+        <test-method is-config="true" signature="openWebPage()[pri:0, instance:Automation.testsuite.LoginTest@2f94c4db]" started-at="2025-11-23T17:11:39 ICT" name="openWebPage" finished-at="2025-11-23T17:11:43 ICT" duration-ms="4425" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getElementByAddress -->
-        <test-method signature="getElementByEmail()[pri:0, instance:Automation.testsuite.Day_8_BTVN@55141def]" started-at="2025-11-03T18:02:23 ICT" name="getElementByEmail" finished-at="2025-11-03T18:02:26 ICT" duration-ms="3650" status="PASS">
+        </test-method> <!-- openWebPage -->
+        <test-method signature="loginSuccessfully()[pri:0, instance:Automation.testsuite.LoginTest@2f94c4db]" started-at="2025-11-23T17:11:43 ICT" name="loginSuccessfully" finished-at="2025-11-23T17:11:44 ICT" duration-ms="325" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Given xpath expression "//p[text()='Quản lý người dùng'" is invalid: SyntaxError: Document.evaluate: The expression is not a legal expression
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1c017528-d42e-49ea-8ad7-12c029d9703d, findElement {value=//p[text()='Quản lý người dùng', using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 145.0.1, moz:accessibilityChecks: false, moz:buildID: 20251118022223, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35032, moz:profile: C:\Users\thaison\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 1c017528-d42e-49ea-8ad7-12c029d9703d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Given xpath expression "//p[text()='Quản lý người dùng'" is invalid: SyntaxError: Document.evaluate: The expression is not a legal expression
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1c017528-d42e-49ea-8ad7-12c029d9703d, findElement {value=//p[text()='Quản lý người dùng', using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 145.0.1, moz:accessibilityChecks: false, moz:buildID: 20251118022223, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35032, moz:profile: C:\Users\thaison\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 1c017528-d42e-49ea-8ad7-12c029d9703d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at Automation.testsuite.LoginTest.loginSuccessfully(LoginTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getElementByEmail -->
-        <test-method signature="getElementByName()[pri:0, instance:Automation.testsuite.Day_8_BTVN@55141def]" started-at="2025-11-03T18:02:26 ICT" name="getElementByName" finished-at="2025-11-03T18:02:30 ICT" duration-ms="3633" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getElementByName -->
-        <test-method signature="getElementByPassword()[pri:0, instance:Automation.testsuite.Day_8_BTVN@55141def]" started-at="2025-11-03T18:02:30 ICT" name="getElementByPassword" finished-at="2025-11-03T18:02:34 ICT" duration-ms="4156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getElementByPassword -->
-      </class> <!-- Automation.testsuite.Day_8_BTVN -->
+        </test-method> <!-- loginSuccessfully -->
+      </class> <!-- Automation.testsuite.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
