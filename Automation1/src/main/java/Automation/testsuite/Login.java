@@ -28,9 +28,9 @@ public class Login extends CommonBase {
 		}
 		
 		WebElement textPass = driver.findElement(By.id("password"));
-		if(textEmail.isDisplayed()== true)
+		if(textPass.isDisplayed()== true)
 		{
-			textEmail.sendKeys("12345678");			
+			textPass.sendKeys("12345678");			
 		}
 		
 		driver.findElement(By.name("signin")).click();
@@ -38,7 +38,7 @@ public class Login extends CommonBase {
 		driver.switchTo().alert().accept();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		
-		WebElement textQuanLyND= driver.findElement(By.xpath("//p[text()='Quản lý người dùng'"));
+		WebElement textQuanLyND= driver.findElement(By.xpath("//p[text()='Quản lý người dùng']"));
 		
 		assertTrue(textQuanLyND.isDisplayed());
 		
@@ -53,9 +53,9 @@ public class Login extends CommonBase {
 		}
 		
 		WebElement textPass = driver.findElement(By.id("password"));
-		if(textEmail.isDisplayed()== true)
+		if(textPass.isDisplayed()== true)
 		{
-			textEmail.sendKeys("12345678");			
+			textPass.sendKeys("12345678");			
 		}
 		
 		driver.findElement(By.name("signin")).click();

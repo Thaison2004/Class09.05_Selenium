@@ -24,14 +24,14 @@ public class LoginPage {
 		WebElement textPass = driver.findElement(By.id("password"));
 		if(textEmail.isDisplayed()== true)
 		{
-			textEmail.sendKeys(pass);			
+			textPass.sendKeys(pass);			
 		}
 		
 		driver.findElement(By.name("signin")).click();
 		driver.switchTo().alert().accept();
 		//Accept alert if exist
 //		driver.switchTo().alert().accept();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 	}
 
 }
