@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Automation.testsuite.TEDU_CapNhatMK_Test">
+      <class name="Automation.testsuite.BTVNDAY16_EX3">
         <methods>
-          <include name="updatePasswordSuccessfully"/>
           <include name="openWebPage"/>
+          <include name="clickAlertWithOkAndCancel"/>
         </methods>
-      </class> <!-- Automation.testsuite.TEDU_CapNhatMK_Test -->
+      </class> <!-- Automation.testsuite.BTVNDAY16_EX3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -18,7 +18,7 @@ public class TEDU_CapNhatMK_Test extends CommonBase {
 	@BeforeMethod
 	public void openWebPage()
 	{
-		driver = initWebDriver(CT_PageURL.TEDU_URL);
+		driver = initChromeDriver(CT_PageURL.TEDU_URL);
 	}
 	@Test
 	public void loginSuccessfully()
